@@ -3,3 +3,128 @@ body {
   height: 100%;
   margin: 0;
 }
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+header {
+  background-color: white;
+  padding: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: uppercase;
+  border-bottom: 2px solid #ddd;
+  text-align: center; /* Center the header text */
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav a {
+  text-decoration: none;
+  color: white; /* White text for better contrast */
+  background-color: gray; /* Grey background */
+  padding: 10px; /* Padding for better spacing */
+  border-radius: 5px; /* Rounded corners */
+  margin: 5px; /* Space between links */
+  display: inline-block;
+}
+
+header nav a:hover {
+  background-color: darkgray; /* Slight hover effect */
+  text-decoration: none;
+}
+
+/* Featured Property Section */
+#featured-property {
+  margin: 20px auto;
+  max-width: 900px;
+  background-color: white;
+  padding: 20px;
+  border: 1px solid #ddd;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center; /* Center align the entire section */
+}
+
+#featured-property img {
+  display: block; /* Ensures it's treated as a block element */
+  margin: 0 auto; /* Centers the image horizontally */
+  width: 100%; /* Responsive image */
+  height: auto;
+  border-bottom: 2px solid #ddd;
+}
+
+#featured-property figcaption {
+  font-size: 14px; /* Shrink font size */
+  margin: 10px 0;
+  color: #555;
+  text-align: center; /* Center the caption */
+}
+
+#featured-property p {
+  margin: 20px auto; /* Adds vertical spacing and centers */
+  line-height: 1.6;
+  text-align: center; /* Centers the text */
+  width: 800px; /* Hard width for better alignment */
+}
+
+/* Details Section */
+#details {
+  display: flex; /* Flexbox for horizontal layout */
+  flex-wrap: wrap; /* Wrap content if the viewport is too small */
+  justify-content: center; /* Center the row */
+  background-color: red; /* Red background for footer */
+  color: white;
+  padding: 20px;
+  margin-top: 20px;
+  text-align: center; /* Center text inside each div */
+}
+
+#details div {
+  background-color: #b30000; /* Slightly darker red for divs */
+  flex: 1 1 25%; /* Occupy 25% of the row */
+  box-sizing: border-box;
+  padding: 10px;
+  margin: 5px;
+}
+
+#details h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  border-bottom: 2px solid white;
+  padding-bottom: 5px;
+}
+
+#details p {
+  margin: 0;
+  line-height: 1.4;
+}
+
+#details a {
+  color: white;
+  text-decoration: none;
+}
+
+#details a:hover {
+  text-decoration: underline;
+}
+
+/* Footer responsiveness */
+@media (max-width: 768px) {
+  #details {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  #details div {
+    flex: 1 1 100%; /* Each div takes up full width on smaller screens */
+  }
+}
