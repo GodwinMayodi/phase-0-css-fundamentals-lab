@@ -3,7 +3,7 @@ body {
   height: 100%;
   margin: 0;
 }
-/* General Styles */
+
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -20,7 +20,7 @@ header {
   font-weight: bold;
   text-transform: uppercase;
   border-bottom: 2px solid #ddd;
-  text-align: center; /* Center the header text */
+  text-align: center;
 }
 
 header nav {
@@ -29,20 +29,20 @@ header nav {
 
 header nav a {
   text-decoration: none;
-  color: white; /* White text for better contrast */
-  background-color: gray; /* Grey background */
-  padding: 10px; /* Padding for better spacing */
-  border-radius: 5px; /* Rounded corners */
-  margin: 5px; /* Space between links */
+  color: white;
+  background-color: gray; 
+  padding: 10px; 
+  border-radius: 5px; 
+  margin: 5px;
   display: inline-block;
 }
 
 header nav a:hover {
-  background-color: darkgray; /* Slight hover effect */
+  background-color: darkgray; 
   text-decoration: none;
 }
 
-/* Featured Property Section */
+
 #featured-property {
   margin: 20px auto;
   max-width: 900px;
@@ -50,46 +50,46 @@ header nav a:hover {
   padding: 20px;
   border: 1px solid #ddd;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  text-align: center; /* Center align the entire section */
+  text-align: center; 
 }
 
 #featured-property img {
-  display: block; /* Ensures it's treated as a block element */
-  margin: 0 auto; /* Centers the image horizontally */
-  width: 100%; /* Responsive image */
+  display: block; 
+  margin: 0 auto; 
+  width: 100%; 
   height: auto;
   border-bottom: 2px solid #ddd;
 }
 
 #featured-property figcaption {
-  font-size: 14px; /* Shrink font size */
+  font-size: 14px; 
   margin: 10px 0;
   color: #555;
-  text-align: center; /* Center the caption */
+  text-align: center; 
 }
 
 #featured-property p {
-  margin: 20px auto; /* Adds vertical spacing and centers */
+  margin: 20px auto; 
   line-height: 1.6;
-  text-align: center; /* Centers the text */
-  width: 800px; /* Hard width for better alignment */
+  text-align: center;
+  width: 800px; 
 }
 
-/* Details Section */
+
 #details {
-  display: flex; /* Flexbox for horizontal layout */
-  flex-wrap: wrap; /* Wrap content if the viewport is too small */
-  justify-content: center; /* Center the row */
-  background-color: red; /* Red background for footer */
+  display: flex; 
+  flex-wrap: wrap; 
+  justify-content: center; 
+  background-color: red; 
   color: white;
   padding: 20px;
   margin-top: 20px;
-  text-align: center; /* Center text inside each div */
+  text-align: center; 
 }
 
 #details div {
-  background-color: #b30000; /* Slightly darker red for divs */
-  flex: 1 1 25%; /* Occupy 25% of the row */
+  background-color: #b30000; 
+  flex: 1 1 25%; 
   box-sizing: border-box;
   padding: 10px;
   margin: 5px;
@@ -116,7 +116,7 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-/* Footer responsiveness */
+
 @media (max-width: 768px) {
   #details {
     flex-direction: column;
@@ -125,6 +125,6 @@ header nav a:hover {
   }
 
   #details div {
-    flex: 1 1 100%; /* Each div takes up full width on smaller screens */
+    flex: 1 1 100%; 
   }
 }
